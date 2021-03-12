@@ -1,0 +1,13 @@
+node_modules/
+hot
+.vscode
+.idea/
+mix-manifest.json
+src/Env.js
+src/Env-develop.js
+src/Env-production.js
+Env.js
+access.log
+error.log
+yarn.lock
+package-lock.json

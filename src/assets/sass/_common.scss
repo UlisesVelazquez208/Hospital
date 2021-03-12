@@ -1,0 +1,155 @@
+.custom-dropdown-filter-by-country {
+    .vue-treeselect {
+        .vue-treeselect__control {
+            div {
+                line-height: 1;
+            }
+
+            .vue-treeselect__multi-value {
+                .vue-treeselect__multi-value-item-container {
+                    &::after {
+                        content: ",";
+                        line-height: 21px;
+                    }
+
+                    .vue-treeselect__multi-value-item {
+                        font-size: 15px;
+                        background-color: transparent;
+                        color: #495057;
+                        
+                        &:hover, &:focus {
+                            background: transparent;
+                            color: #495057;
+                            outline: none;
+                        }
+                        
+                        .vue-treeselect__multi-value-label {
+                            line-height: 1;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .vue-treeselect__multi-value-item-container:nth-last-of-type(2) {
+                    &::after {
+                        content: "";
+                    }
+                }
+            }
+
+            .vue-treeselect__single-value {
+                line-height: 37px;
+            }
+
+            .vue-treeselect__value-remove {
+                display: none;
+            }
+
+            .vue-treeselect__placeholder {
+                font-size: 15px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.search-input-container {
+    position: relative;
+
+    .search-icon {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+        color: #0072BC;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    #keyword {
+        padding-left: 35px;
+        height: 40px;
+    }
+}
+
+.btn-search {
+    height: 40px;
+}
+
+.custom-radio {
+    display: flex;
+    justify-content: center;
+
+    label{
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: bold;
+        color: rgba(1, 0, 0, 0.65);
+
+        input {
+            position: absolute;
+            opacity: 0;
+
+            &:checked ~ .checkmark {
+                background-color: #414242;
+            }
+
+            &:checked ~ .checkmark:after {
+                display: block;
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+
+            &::after {
+                content: "";
+                position: absolute;
+                display: none;
+                top: 6px;
+                left: 6px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: white;
+            }
+        }
+
+        &:hover{
+            input ~ .checkmark {
+                background-color: #ccc;
+            }
+        }
+
+        &:hover{
+            input:checked ~ .checkmark {
+                background-color: #414242;
+            }
+        }
+    }
+}
+
+.bg-fa {
+    background-color: #FAFAFA!important;
+}
+
+.quillWrapper {
+    background-color: white;
+}
+
+.vue-dropzone > .dz-preview .dz-error-message {
+    top: 5%!important;
+}

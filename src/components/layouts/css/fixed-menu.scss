@@ -1,0 +1,28 @@
+aside.left-aside {
+    position: fixed;
+    z-index: 9;
+    top: 80px;
+    left: 0;
+    padding-top: 16px;
+    max-height: 100%;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding-bottom: 50px;
+    @media screen and (max-width: 560px) {
+        top: 100px;
+        height: calc(100% - 100px);
+    }
+    html[dir='rtl'] *{
+        border: 10px solid red;
+    }
+}
+
+aside.right-aside {
+    display: block !important;
+    width: auto !important;
+    margin-left: 280px;
+}
+
+body.left-hidden aside.right-aside {
+    margin-left: 0;
+}

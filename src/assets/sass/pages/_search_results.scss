@@ -1,0 +1,60 @@
+.search-results-page {
+    .search-input-container {
+        position: relative;
+
+        .search-icon {
+            position: absolute;
+            top: 4px;
+            left: 10px;
+            color: #0072BC;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+
+        #keyword {
+            padding-left: 35px;
+            height: 40px;
+        }
+    }
+
+    .btn-search {
+        width: 100%;
+    }
+
+    .custom-dropdown-filter-by-country { 
+        margin-bottom: 0;
+    }
+
+    .faqs-list-nav .container {
+        height: calc(100vh - 344px);
+        overflow-y: scroll;
+    }
+
+    .faq-details-container {
+        .general-info, .related-content {
+            height: calc(100vh - 368px);
+            overflow-y: auto;
+        }
+    }
+
+    .faq-per-category-details-container {
+        .general-info, .related-content {
+            height: calc(100vh - 368px);
+            overflow-y: auto;
+        }
+    }
+
+    .media-list-nav {
+        .container {
+            height: calc(100vh - 344px);
+            overflow-y: scroll;
+        }
+    }
+
+    .directories-list-nav {
+        .container {
+            height: calc(100vh - 344px);
+            overflow-y: scroll;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.front-liner-dashboard {
+    .search {
+        .search-input-container {
+            position: relative;
+
+            .search-icon {
+                position: absolute;
+                top: 4px;
+                left: 10px;
+                color: #0072BC;
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            #keyword {
+                padding-left: 35px;
+                height: 40px;
+            }
+        }
+
+        .btn-search {
+            height: 40px;
+            width: 100%;
+        }
+    }
+}

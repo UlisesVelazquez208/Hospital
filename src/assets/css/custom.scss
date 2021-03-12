@@ -1,0 +1,492 @@
+header.header {
+  .navbar-right {
+    .btn-secondary {
+      &.dropdown-toggle {
+        span {
+          display: inline-block;
+        }
+
+        img {
+          border: 2px solid #ffffff;
+        }
+      }
+
+      .user_name_max {
+        color: #ffffff !important;
+      }
+    }
+
+    .dropdown-menu {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%) rotate(45deg);
+        background-color: white;
+        z-index: -1;
+
+        html[dir='rtl'] {
+          left: 50px;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu-right {
+    a.dropdown-item.dropdown_content {
+      padding: 0 15px;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:last-child {
+        a.drpodowtext {
+          border-bottom: none;
+        }
+      }
+    }
+
+    a.drpodowtext {
+      padding: 15px 20px;
+      border-bottom: 1px solid #d5d5d5;
+
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
+  }
+
+  &.fixed-top {
+    > nav {
+      box-shadow: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content > .component-container {
+    background-color: transparent !important;
+    padding: 0 !important;
+
+    > .row {
+      margin-bottom: 50px;
+    }
+
+    .col-sm-12 {
+      margin-bottom: 50px !important;
+    }
+    .top-faq-viewed{
+      max-height: none!important;
+      .container{
+        height: auto;
+      }
+    }
+  }
+}
+
+.faq-details-container .general-info-container .directory-details ul li{
+  display: flex;
+}
+
+.faq-details-container .general-info-container .directory-details ul li .img-container {
+  width: 225px;
+  height: 100%;
+  overflow: hidden;
+  flex: 0 0 17%;
+}
+.faq-details-container .general-info-container .directory-info-container{
+  //flex: 0 0 18%;
+  width: 100%;
+}
+.faq-details-container .general-info-container .directory-info-container .row{
+  width: 100%;
+}
+
+
+.hashtags .selected-list span.custom__remove {
+  line-height: 13px;
+  background-color: #b4231e;
+  font-weight: 700;
+}
+
+.faq-title,
+.text-center {
+  padding-top: 5px;
+}
+
+.faq-title,
+.top-faq-viewed .row-style {
+  font-size: 14px;
+}
+
+.white-section_details .faq-data + .comment-component {
+  padding-left: 0;
+}
+
+.map-location a {
+  cursor: pointer;
+  color: #337ab7 !important;
+
+  &:hover {
+    color: #22527b !important;
+  }
+}
+
+.pagination .text-center {
+  padding-top: 0;
+}
+
+.bg-info-card .card-body .white-section_details .add-form {
+  top: -25px;
+}
+
+html[dir='rtl'] {
+  .collapse-item .submenu-header,
+  .menu-item,
+  .label-container,
+  .card-body,
+  body {
+    text-align: right;
+  }
+
+  .header .logo {
+    float: right;
+  }
+
+  .header .navbar-right {
+    float: left;
+  }
+
+  .float-left {
+    float: right !important;
+  }
+
+  .float-right {
+    float: left !important;
+  }
+
+  .text-left {
+    text-align: right !important;
+  }
+
+  .text-right {
+    text-align: left !important;
+  }
+
+  aside.left-aside {
+    left: auto;
+    right: 0;
+  }
+
+  aside.right-aside {
+    margin-right: 280px;
+    margin-left: 0;
+    padding: 0 30px 10px 10px;
+  }
+
+  .left-hidden aside.right-aside {
+    margin-right: 0;
+  }
+
+  .submenu.collapse-item {
+    .submenu-header::after {
+      left: 10px;
+      transform: rotate(180deg) translateY(50%);
+    }
+
+    &.active {
+      .submenu-header::after {
+        right: auto;
+        transform: rotate(360deg) translateY(-50%);
+      }
+    }
+  }
+
+  .label-container {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  .checkmark {
+    left: auto;
+    right: 0;
+  }
+
+  .component-container .component-header .component-title h3 {
+    text-align: right;
+  }
+
+  a.character {
+    float: right;
+  }
+
+  .vue-monthly-picker .month-year-label {
+    text-align: left;
+  }
+
+  .vue-monthly-picker .input {
+    float: left;
+  }
+
+  .visible-container {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  .ql-picker-label {
+    text-align: left;
+  }
+
+  .header .navbar-right .dropdown-item {
+    text-align: right;
+  }
+
+}
+
+div.submenu {
+  &.collapse-item {
+    .submenu-header {
+      position: relative;
+      padding: 16px 10px 16px 20px;
+
+      span {
+        display: block;
+        overflow: hidden;
+      }
+
+      &::after {
+        top: 40%;
+        right: 1rem;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.progress[style="height: 15px;"] {
+  border-radius: 8px;
+
+  .progress-bar {
+    border-radius: 8px;
+  }
+}
+
+.progress-bar {
+  border-radius: 5px;
+}
+
+div.submenu,
+div.listbrdr {
+  transition: 0.25s;
+
+  &:hover {
+    background-color: rgba(20, 171, 255, 0.33);
+    transition: 0.25s;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+      color: #0072BC;
+    }
+
+    &.active {
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.sidebar {
+  .menu-item {
+    padding: 16px 10px 16px 20px;
+
+    html[dir='rtl'] & {
+      padding: 15px 15px 15px 10px;
+    }
+  }
+
+  i.leftmenu_icon {
+    float: left;
+    // width: auto;
+    margin: 0;
+
+    html[dir='rtl'] & {
+      float: right;
+    }
+
+    &:before {
+      float: left;
+      width: 25px;
+      text-align: left;
+
+      html[dir='rtl'] & {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+
+  .name {
+    display: block;
+    overflow: hidden;
+  }
+
+  .submenu-content-box {
+    .listbrdr a {
+      padding-right: 25px;
+    }
+  }
+}
+
+.dropdown-menu-right {
+  padding: 5px;
+  min-width: 280px;
+
+  a {
+    display: block;
+    padding: 5px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+div.bell_bg {
+  button {
+    cursor: pointer;
+
+    &.btn-secondary:hover {
+      background-color: transparent !important;
+    }
+  }
+
+  .dropdown-toggle::after {
+    margin-right: 5px;
+  }
+
+  &.user.user-menu:hover .user_name_max {
+    color: #ffffff;
+  }
+
+  &.show button {
+    background-color: transparent !important;
+
+  }
+}
+
+div.highlighted.lstbrdr {
+  background-color: #e0e1e2;
+  margin-bottom: 1px;
+}
+
+span.address-item {
+  display: block;
+}
+
+.right-aside {
+  .white-section {
+    max-width: 80%;
+  }
+
+  .tab-pane {
+    .white-section {
+      max-width: 100%;
+    }
+  }
+}
+
+.vue-treeselect div,
+.vue-treeselect span {
+  line-height: 37px;
+}
+
+.vue-monthly-picker div.month-picker-wrapper {
+  min-width: auto;
+}
+
+.vue-monthly-picker .date-popover {
+  width: 200px;
+}
+
+div.month-year-display {
+  float: none;
+}
+
+.vue-monthly-picker .month-year-label {
+  text-align: right;
+}
+
+.faq-question {
+  font-size: 18px;
+}
+
+.directory .selected-list li h4.directory-title {
+  font-size: 20px;
+}
+
+.directory .selected-list li .directory-title + .directory-info {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.address h5 {
+  font-size: 14px;
+  font-weight: 700
+}
+
+.white-section .card-body div.white-section_title h4 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .wrapper > aside.right-aside {
+    width: 100% !important;
+    padding: 0 15px;
+
+    .row {
+      //width: 100%;
+    }
+  }
+}
+@media (max-width: 990px){
+  .faqs-list-wrapper{
+    margin: auto auto 15px!important;
+  }
+  .faqs-list-wrapper + div{
+    margin: auto;}
+}
+
+@media (max-width: 560px) {
+  header.header nav {
+    height: 130px !important;
+
+    .user.user-menu > button img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  body header.header nav .sidebar-toggle {
+    padding-top: 10px !important;
+
+    html[dir='rtl'] & {
+      padding-left: 0 !important;
+      padding-right: 15px !important;
+    }
+  }
+  div.wrapper {
+    margin-top: 130px;
+
+    aside.left-aside {
+      top: 130px;
+      height: calc(100% - 130px);
+    }
+  }
+}

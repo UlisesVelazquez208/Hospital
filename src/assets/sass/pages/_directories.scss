@@ -1,0 +1,13 @@
+.directories-page {
+    .directories-list-nav {
+        .container {
+            height: calc(100vh - 382px);
+            overflow-y: scroll;
+        }
+    }
+
+    .general-info, .related-content {
+        height: calc(100vh - 412px);
+        overflow-y: scroll;
+    }
+}

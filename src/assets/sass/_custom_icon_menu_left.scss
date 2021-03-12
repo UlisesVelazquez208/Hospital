@@ -1,0 +1,19 @@
+#menu {
+    .leftmenu_icon {
+        &.fa-home, &.fa-newspaper-o, &.icon-market, &.icon-ventilator {
+            margin-bottom: -2px;
+        }
+
+        &.fa-cog,  &.fa-pie-chart , &.fa-line-chart {
+            margin-bottom: -1px;
+        }
+
+        &.icon-hospital_bed {
+            margin-bottom: -6px;
+        }
+
+        &.icon-mask {
+            margin-bottom: -4px;
+        }
+    }
+}
